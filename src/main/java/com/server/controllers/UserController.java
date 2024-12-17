@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 @RequestMapping("/api/v1/users")
 @Validated
-public class UserController<Pageable> {
+public class UserController {
 
     @Autowired
     UserService userService;
