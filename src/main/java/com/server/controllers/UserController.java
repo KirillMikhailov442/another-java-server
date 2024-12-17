@@ -69,7 +69,7 @@ public class UserController {
     }
 
     @GetMapping("/confirm")
-    public ResponseEntity<String> getMethodName(@RequestParam long id) throws Exception {
+    public ResponseEntity<String> confirm(@RequestParam long id) throws Exception {
         userService.confirm(id);
         return new ResponseEntity<>("User confirm", HttpStatus.OK);
     }
